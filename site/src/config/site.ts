@@ -37,7 +37,7 @@ export const site: SiteConfig = {
   name: 'Антон Рожин',
   role: 'Product Manager',
   about:
-    'Product Manager с консалтинговым бэкграундом и 3+ годами опыта в продуктовом управлении. Запустил 2 продукта в FinTech и 3 продукта с нуля в EnergyTech. Принимаю решения на основе данных.',
+    'Product Manager с консалтинговым бэкграундом и 3+ годами опыта в продуктовом управлении. Запустил 2 продукта в FinTech и 3 продукта с нуля в EnergyTech.',
   photo,
   avatar,
   city: 'Санкт-Петербург',
