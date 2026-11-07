@@ -1,49 +1,29 @@
-# Сборка сайта из site/ и публикация на GitHub Pages при каждом push в master.
-# В репозитории: Settings → Pages → Source → GitHub Actions.
-name: Deploy to GitHub Pages
-
+name: Deploy built site to GitHub Pages
 on:
   push:
     branches: [master]
   workflow_dispatch:
-
 permissions:
   contents: read
   pages: write
   id-token: write
-
-# Одновременно идёт только одна публикация; новая не прерывает уже начатую
 concurrency:
   group: pages
   cancel-in-progress: false
-
 jobs:
-  build:
+  package:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: site
     steps:
       - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version-file: site/.nvmrc
-          cache: npm
-          cache-dependency-path: site/package-lock.json
-
-      - run: npm ci
-
-      - run: npm run build
-        env:
-          SITE_URL: https://antonyrozhin.github.io
-
+      - name: Prepare public files
+        run: |
+          mkdir _site
+          cp -R _astro cases *.html *.xml cv.pdf favicon.svg favicon.ico robots.txt .nojekyll _site/
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: site/dist
-
+          path: _site
   deploy:
-    needs: build
+    needs: package
     runs-on: ubuntu-latest
     environment:
       name: github-pages

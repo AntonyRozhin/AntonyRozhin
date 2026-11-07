@@ -1,0 +1,53 @@
+<!DOCTYPE html><html lang="ru" data-astro-cid-hkbrpulz><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Вклады: автопродление и свободное закрытие — Антон Рожин</title><meta name="description" content="Согласовал досрочное закрытие вкладов в приложении, реализовал автопродление для всех вкладов и переработал экран деталей. Больше денег остаётся в банке после окончания срока."><link rel="icon" type="image/svg+xml" href="/favicon.svg?v=3"><meta property="og:type" content="website"><meta property="og:locale" content="ru_RU"><meta property="og:site_name" content="Антон Рожин"><meta property="og:title" content="Вклады: автопродление и свободное закрытие — Антон Рожин"><meta property="og:description" content="Согласовал досрочное закрытие вкладов в приложении, реализовал автопродление для всех вкладов и переработал экран деталей. Больше денег остаётся в банке после окончания срока."><meta property="og:url" content="https://antonyrozhin.github.io/cases/deposits-autorenewal/"><meta property="og:image" content="https://antonyrozhin.github.io/_astro/cover.C_K1lIgt_ZBDGw7.jpeg"><link rel="stylesheet" href="/_astro/Base.D7herUPd.css"><link rel="stylesheet" href="/_astro/_slug_.BpMGD4ay.css"><style>.placeholder[data-astro-cid-pj2ugyhi]{width:100%;padding:var(--space-6);border-radius:var(--radius);background:repeating-linear-gradient(135deg, transparent 0 14px, var(--color-line) 14px 15px), var(--color-surface);place-items:center;display:grid;overflow:hidden}.label[data-astro-cid-pj2ugyhi]{max-width:100%;padding:var(--space-2) var(--space-4);background:var(--color-bg);color:var(--color-text-muted);font-size:var(--text-sm);text-align:center;border-radius:999px;font-weight:600}.results[data-astro-cid-bfvssv7w]{gap:var(--space-4) var(--space-8);flex-wrap:wrap;list-style:none;display:flex}.item[data-astro-cid-bfvssv7w]{gap:var(--space-1);flex-direction:column;max-width:15em;display:flex}.value[data-astro-cid-bfvssv7w]{background:linear-gradient(to top, var(--color-mark) 0 40%, transparent 40%);color:var(--color-text);letter-spacing:-.02em;white-space:nowrap;align-self:flex-start;margin-left:-.12em;padding:0 .12em;font-weight:700;line-height:1.05}.label[data-astro-cid-bfvssv7w]{color:var(--color-text-muted);font-size:var(--text-sm);line-height:1.35}.card[data-astro-cid-bfvssv7w]{gap:var(--space-6);grid-template-columns:repeat(2,minmax(0,1fr));width:100%;display:grid}.card[data-astro-cid-bfvssv7w] .item[data-astro-cid-bfvssv7w]{max-width:none}.card[data-astro-cid-bfvssv7w] .value[data-astro-cid-bfvssv7w]{font-size:clamp(1.5rem,1.25rem + 1vw,2rem)}.header[data-astro-cid-bfvssv7w]{gap:var(--space-6) var(--space-12)}.header[data-astro-cid-bfvssv7w] .value[data-astro-cid-bfvssv7w]{font-size:clamp(2rem,1.5rem + 2vw,3rem)}
+</style></head><body data-astro-cid-hkbrpulz><header class="topbar" data-astro-cid-vfgrerme><nav class="topbar-inner" aria-label="Навигация" data-astro-cid-vfgrerme><a class="back" href="/#cases" data-astro-cid-vfgrerme>← Все кейсы</a><a class="owner" href="/" data-astro-cid-vfgrerme>Антон Рожин</a></nav></header><main data-astro-cid-hkbrpulz><article data-astro-cid-vfgrerme><header class="case-header" data-astro-cid-uccd7n42><div class="intro" data-astro-cid-uccd7n42><p class="meta" data-astro-cid-uccd7n42>Банк Санкт-Петербург · 2026 · Product Manager</p><h1 class="title" data-astro-cid-uccd7n42>Вклады: автопродление и свободное закрытие</h1><p class="summary" data-astro-cid-uccd7n42>Согласовал досрочное закрытие вкладов в приложении, реализовал автопродление для всех вкладов и переработал экран деталей. Больше денег остаётся в банке после окончания срока.</p><ul class="results header" data-astro-cid-bfvssv7w><li class="item" data-astro-cid-bfvssv7w><span class="value" data-astro-cid-bfvssv7w>+6,5%</span><span class="label" data-astro-cid-bfvssv7w>AUM по вкладам за 3 месяца</span></li><li class="item" data-astro-cid-bfvssv7w><span class="value" data-astro-cid-bfvssv7w>+10%</span><span class="label" data-astro-cid-bfvssv7w>NPS по вкладам</span></li></ul></div><div class="cover" data-astro-cid-uccd7n42><img src="/_astro/cover.C_K1lIgt_1mYs4t.webp" srcset="/_astro/cover.C_K1lIgt_ZyBLOw.webp 640w, /_astro/cover.C_K1lIgt_Z11E99N.webp 960w, /_astro/cover.C_K1lIgt_1sbrjv.webp 1280w, /_astro/cover.C_K1lIgt_1mYs4t.webp 1600w" alt="Экран деталей накопительного счёта до и после доработки" sizes="(min-width: 1180px) 1100px, 100vw" loading="eager" data-astro-cid-uccd7n42="true" decoding="async" width="1600" height="1000" class="cover-img"></div></header><div class="prose" data-astro-cid-vfgrerme><h2 id="контекст">Контекст</h2>
+<p>Вклады — одно из шести продуктовых направлений в моём портфеле. В банке действует стратегия «банк без звёздочек»: убрать из продуктов условия, о которых клиент узнаёт, только когда они срабатывают против него. Однако каждая «звёздочка» кому-то в банке выгодна, поэтому её отмена требует не только доработки, но и долгих согласований.</p>
+<h2 id="проблема">Проблема</h2>
+<p>Интересы банка и клиента противоречили друг другу:</p>
+<ul>
+<li><strong>Банк терял деньги на окончании вкладов.</strong> Автопродление было опцией: галочка стояла по умолчанию, но 30% клиентов её снимали, и по окончании срока их деньги уходили со вклада.</li>
+<li><strong>Клиенты не знали об ограничении на досрочное закрытие.</strong> Закрыть вклад в приложении можно было только в течение 2 недель после пролонгации, в остальное время — в офисе или через чат (работало не всегда). При оформлении клиент об этом не знал и узнавал, только когда деньги понадобились. Отсюда жалобы и низкий NPS по вкладам.</li>
+</ul>
+<h2 id="задача">Задача</h2>
+<p>Увеличить AUM по вкладам и поднять NPS.</p>
+<h2 id="решение">Решение</h2>
+<p>Три доработки:</p>
+<ol>
+<li><strong>Автопродление для всех вкладов.</strong> Отключить его можно через чат: отдельный интерфейс задержал бы запуск.</li>
+<li><strong>Досрочное закрытие в приложении в любой момент</strong>, а не только в первые 2 недели после пролонгации.</li>
+<li><strong>Переработка экрана деталей</strong> накопительного счёта и вклада: блоки перегруппированы, ключевая информация и действия на виду.</li>
+</ol>
+<div class="gallery gallery--pair"><figure><img alt="Экран деталей накопительного счёта до" loading="lazy" decoding="async" width="375" height="1138" src="/_astro/details-before.iJjIcOZs_Z1q3OEY.webp"><figcaption>Прежний экран деталей накопительного счёта</figcaption></figure><span class="gallery-arrow" aria-hidden="true">→</span><figure><img alt="Экран деталей накопительного счёта после" loading="lazy" decoding="async" width="375" height="1060" src="/_astro/details-after.CFFxBPpa_ZyUJJI.webp"><figcaption>Блоки перегруппированы, в меню есть «Закрыть счёт»</figcaption></figure></div>
+<p><strong>Согласование с казначейством, юристами, бизнес-владельцем депозитов и блоком клиентского опыта заняло около 3 месяцев.</strong> Главный риск — массовые досрочные закрытия. Оценил объём досрочных закрытий на внутренних данных и опыте других банков и заложил его в общую экономическую модель изменений. Второй риск — падение метрик клиентского опыта из-за автопродления для всех. Интервью с клиентами и анализ жалоб не показали резко негативной реакции на автопродление.</p>
+<h2 id="результат">Результат</h2>
+<p>За 3 месяца после запуска:</p>
+<table>
+<thead>
+<tr>
+<th>Метрика</th>
+<th>Результат</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AUM по вкладам</td>
+<td><strong>+6,5%</strong> при стагнации рынка на фоне снижения ставок</td>
+</tr>
+<tr>
+<td>NPS по вкладам</td>
+<td><strong>+10%</strong></td>
+</tr>
+<tr>
+<td>Досрочные закрытия</td>
+<td>+15%, в пределах заложенного в модель</td>
+</tr>
+<tr>
+<td>Доля средств, оставшихся после окончания срока</td>
+<td><strong>60% → 68%</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="выводы">Выводы</h2>
+<ul>
+<li><strong>Data-driven подход ускоряет согласование.</strong> Каждый риск был закрыт цифрами: моделью досрочных закрытий, опытом других банков, интервью с клиентами и анализом жалоб.</li>
+</ul>
+</div></article><nav class="next" aria-label="Следующий кейс" data-astro-cid-lyfnp6fy><a class="link" href="/cases/card-delivery/" data-astro-cid-lyfnp6fy><span class="eyebrow" data-astro-cid-lyfnp6fy>Следующий кейс</span><span class="title" data-astro-cid-lyfnp6fy>Курьерская доставка карт в приложении</span><span class="meta" data-astro-cid-lyfnp6fy>Банк Санкт-Петербург · 2026</span><span class="arrow" aria-hidden="true" data-astro-cid-lyfnp6fy>→</span></a></nav></main><footer class="footer" data-astro-cid-jo6i4kqk><div class="inner" data-astro-cid-jo6i4kqk><div class="who" data-astro-cid-jo6i4kqk><p class="name" data-astro-cid-jo6i4kqk>Антон Рожин</p><p class="city" data-astro-cid-jo6i4kqk>Санкт-Петербург</p></div><ul class="contacts" data-astro-cid-jo6i4kqk><li data-astro-cid-jo6i4kqk><a href="mailto:rozhin96@mail.ru" data-goal="email_click" data-astro-cid-jo6i4kqk>rozhin96@mail.ru</a></li><li data-astro-cid-jo6i4kqk><a href="tel:+79531567167" data-astro-cid-jo6i4kqk>+7 (953) 156-71-67</a></li><li data-astro-cid-jo6i4kqk><a href="https://t.me/AntonyRozhin" target="_blank" rel="noopener noreferrer" data-goal="telegram_click" data-astro-cid-jo6i4kqk>@AntonyRozhin</a></li><li data-astro-cid-jo6i4kqk><a href="https://www.linkedin.com/in/AntonyRozhin" target="_blank" rel="noopener noreferrer" data-goal="linkedin_click" data-astro-cid-jo6i4kqk>LinkedIn</a></li></ul><p class="copy" data-astro-cid-jo6i4kqk>© 2026 Антон Рожин</p></div></footer></body></html>

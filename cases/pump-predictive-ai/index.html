@@ -1,0 +1,61 @@
+<!DOCTYPE html><html lang="ru" data-astro-cid-hkbrpulz><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Предиктивная аналитика остановок скважин — Антон Рожин</title><meta name="description" content="Запустил MVP предиктивной аналитики остановок насосов; A/B-тест показал снижение непредвиденных остановок на 20%."><link rel="icon" type="image/svg+xml" href="/favicon.svg?v=3"><meta property="og:type" content="website"><meta property="og:locale" content="ru_RU"><meta property="og:site_name" content="Антон Рожин"><meta property="og:title" content="Предиктивная аналитика остановок скважин — Антон Рожин"><meta property="og:description" content="Запустил MVP предиктивной аналитики остановок насосов; A/B-тест показал снижение непредвиденных остановок на 20%."><meta property="og:url" content="https://antonyrozhin.github.io/cases/pump-predictive-ai/"><meta property="og:image" content="https://antonyrozhin.github.io/_astro/dashboard.xe1r4eoP_jwzAO.jpeg"><link rel="stylesheet" href="/_astro/Base.D7herUPd.css"><link rel="stylesheet" href="/_astro/_slug_.BpMGD4ay.css"><style>.placeholder[data-astro-cid-pj2ugyhi]{width:100%;padding:var(--space-6);border-radius:var(--radius);background:repeating-linear-gradient(135deg, transparent 0 14px, var(--color-line) 14px 15px), var(--color-surface);place-items:center;display:grid;overflow:hidden}.label[data-astro-cid-pj2ugyhi]{max-width:100%;padding:var(--space-2) var(--space-4);background:var(--color-bg);color:var(--color-text-muted);font-size:var(--text-sm);text-align:center;border-radius:999px;font-weight:600}.results[data-astro-cid-bfvssv7w]{gap:var(--space-4) var(--space-8);flex-wrap:wrap;list-style:none;display:flex}.item[data-astro-cid-bfvssv7w]{gap:var(--space-1);flex-direction:column;max-width:15em;display:flex}.value[data-astro-cid-bfvssv7w]{background:linear-gradient(to top, var(--color-mark) 0 40%, transparent 40%);color:var(--color-text);letter-spacing:-.02em;white-space:nowrap;align-self:flex-start;margin-left:-.12em;padding:0 .12em;font-weight:700;line-height:1.05}.label[data-astro-cid-bfvssv7w]{color:var(--color-text-muted);font-size:var(--text-sm);line-height:1.35}.card[data-astro-cid-bfvssv7w]{gap:var(--space-6);grid-template-columns:repeat(2,minmax(0,1fr));width:100%;display:grid}.card[data-astro-cid-bfvssv7w] .item[data-astro-cid-bfvssv7w]{max-width:none}.card[data-astro-cid-bfvssv7w] .value[data-astro-cid-bfvssv7w]{font-size:clamp(1.5rem,1.25rem + 1vw,2rem)}.header[data-astro-cid-bfvssv7w]{gap:var(--space-6) var(--space-12)}.header[data-astro-cid-bfvssv7w] .value[data-astro-cid-bfvssv7w]{font-size:clamp(2rem,1.5rem + 2vw,3rem)}
+</style></head><body data-astro-cid-hkbrpulz><header class="topbar" data-astro-cid-vfgrerme><nav class="topbar-inner" aria-label="Навигация" data-astro-cid-vfgrerme><a class="back" href="/#cases" data-astro-cid-vfgrerme>← Все кейсы</a><a class="owner" href="/" data-astro-cid-vfgrerme>Антон Рожин</a></nav></header><main data-astro-cid-hkbrpulz><article data-astro-cid-vfgrerme><header class="case-header" data-astro-cid-uccd7n42><div class="intro" data-astro-cid-uccd7n42><p class="meta" data-astro-cid-uccd7n42>Газпромнефть НТЦ · 2024–2025 · Product Manager / Business Analyst</p><h1 class="title" data-astro-cid-uccd7n42>Предиктивная аналитика остановок скважин</h1><p class="summary" data-astro-cid-uccd7n42>Запустил MVP предиктивной аналитики остановок насосов; A/B-тест показал снижение непредвиденных остановок на 20%.</p><ul class="results header" data-astro-cid-bfvssv7w><li class="item" data-astro-cid-bfvssv7w><span class="value" data-astro-cid-bfvssv7w>−20%</span><span class="label" data-astro-cid-bfvssv7w>непредвиденных остановок (A/B-тест)</span></li><li class="item" data-astro-cid-bfvssv7w><span class="value" data-astro-cid-bfvssv7w>−15%</span><span class="label" data-astro-cid-bfvssv7w>среднее время простоя</span></li></ul></div><div class="cover" data-astro-cid-uccd7n42><img src="/_astro/dashboard.xe1r4eoP_Z2dUmMs.webp" srcset="/_astro/dashboard.xe1r4eoP_2vepUp.webp 640w, /_astro/dashboard.xe1r4eoP_1rh54L.webp 960w, /_astro/dashboard.xe1r4eoP_Z2dUmMs.webp 964w" alt="Дашборд «Сводка по объектам»: вероятность отказа, время ожидания и статистика по скважинам" sizes="(min-width: 1180px) 1100px, 100vw" loading="eager" data-astro-cid-uccd7n42="true" decoding="async" width="964" height="544" class="cover-img"></div></header><div class="prose" data-astro-cid-vfgrerme><h2 id="контекст">Контекст</h2>
+<p>ML-продукт для нефтедобычи прогнозирует остановки насосов на скважинах и их вероятные причины. Пользователи — технологи, диспетчеры и инженеры месторождений. Прогноз приходит через дашборд и уведомления начальникам смен.</p>
+<p>Я совмещал роли продакт-менеджера и бизнес-аналитика со стороны заказчика. Разработку делала внешняя команда из 5 человек, к ней были подключены эксперт по ML и специалист по безопасности Газпромнефти.</p>
+<h2 id="проблема">Проблема</h2>
+<p>Ремонты делались по факту отказа или по плановому графику. Анализ показателей скважин операторы проводили вручную и эпизодически.</p>
+<p>Каждая непредвиденная остановка стоит дорого:</p>
+<ul>
+<li><strong>1–10 млн ₽</strong> за день простоя в зависимости от дебита скважины;</li>
+<li>простой может длиться <strong>от 1 до 40 дней</strong> в зависимости от загрузки ремонтной бригады;</li>
+<li><strong>1–2 млн ₽</strong> за спускоподъёмную операцию;</li>
+<li>плюс внеплановая загрузка ремонтных бригад.</li>
+</ul>
+<figure><img alt="Схема: реактивный и проактивный подход" loading="lazy" decoding="async" width="1388" height="680" src="/_astro/scheme-reactive-proactive.rTy9hBpq_1Pm0J2.webp"><figcaption>Реактивный и проактивный подход: предсказанное событие позволяет вмешаться до потерь добычи</figcaption></figure>
+<h2 id="задача">Задача</h2>
+<p>Проверить гипотезу: ИИ может заранее предсказывать остановки скважин и давать технологам время для превентивного воздействия.</p>
+<h2 id="discovery">Discovery</h2>
+<p>Готовые решения вендоров не давали нужного результата. Свой полноценный продукт требовал закупки большого объёма оборудования для телеметрии и обучения модели на накопленных данных.</p>
+<p>Главное ограничение — данные. Для точного прогноза нужна телеметрия раз в минуту или чаще, а часть скважин передавала данные раз в сутки.</p>
+<p>Поэтому путь разделили на два шага:</p>
+<ul>
+<li><strong>preMVP — анализ истории.</strong> Модель разбирает причины прошлых остановок на тех данных, что уже есть.</li>
+<li><strong>MVP — прогноз.</strong> Когда оборудование стоит и данных накоплено достаточно, модель предсказывает будущие остановки и их вероятные причины.</li>
+</ul>
+<h2 id="решение">Решение</h2>
+<p><strong>preMVP:</strong> модель, которая разбирает причины прошлых остановок на имеющихся данных.</p>
+<p><strong>MVP:</strong> сбор телеметрии, необходимое оборудование и модель, которую на накопленных данных обучили прогнозировать будущие остановки.</p>
+<p><strong>Ключевые решения:</strong></p>
+<ul>
+<li><strong>Внедрение: технологи не доверяли прогнозам.</strong> Поэтому для модели выбрали бэггинг деревьев: по каждому прогнозу видно, какие показатели скважины к нему привели, чтобы технолог проверил логику и подтвердил прогноз.</li>
+<li><strong>Доказательство результата: технологи не заносили ремонты в базу.</strong> Без этих данных ремонт по рекомендации системы не отличить от планового, а значит, эффект не доказать. В интерфейс добавили действия прямо из прогноза, например «Запланировать ремонт». Технологу стало проще работать с рекомендацией, а система фиксирует, что ремонт назначен по прогнозу.</li>
+</ul>
+<p>Я вёл полный цикл разработки и защищал дизайн решения перед заказчиком.</p>
+<h2 id="результат">Результат</h2>
+<p><strong>A/B-тест</strong> длился 3 месяца: скважины с прогнозами против контрольной группы.</p>
+<table>
+<thead>
+<tr>
+<th>Метрика</th>
+<th>Результат</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Непредвиденные остановки</td>
+<td><strong>−20%</strong></td>
+</tr>
+<tr>
+<td>Среднее время простоя</td>
+<td><strong>51 ч → ~43 ч (−15%)</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Экономический эффект (NPV):</strong> ~80 млн ₽ на фонде скважин, где шёл A/B-тест (расчётный период 5 лет, ставка дисконтирования 14%).</p>
+<p>По результатам A/B-теста было принято решение масштабировать продукт на остальные месторождения Газпромнефти.</p>
+<h2 id="выводы">Выводы</h2>
+<ul>
+<li><strong>Нужно доказывать эффект.</strong> Продуктом пользовались: технологи работали с прогнозами и действовали по ним. Но ремонты по рекомендациям не попадали в базу, и измерить результат было не на чем. Понадобился отдельный функционал, чтобы технолог подтверждал, что принял решение по сигналу продукта.</li>
+<li><strong>Решает руководство, а работает с продуктом технолог.</strong> Сейчас я бы раньше начал разговаривать с технологами и звал руководство на часть этих встреч, чтобы оно слышало возражения пользователей из первых уст.</li>
+</ul>
+</div></article><nav class="next" aria-label="Следующий кейс" data-astro-cid-lyfnp6fy><a class="link" href="/cases/credit-preapproved/" data-astro-cid-lyfnp6fy><span class="eyebrow" data-astro-cid-lyfnp6fy>Следующий кейс</span><span class="title" data-astro-cid-lyfnp6fy>Предодобренные кредиты на всех платформах</span><span class="meta" data-astro-cid-lyfnp6fy>Банк Санкт-Петербург · 2026</span><span class="arrow" aria-hidden="true" data-astro-cid-lyfnp6fy>→</span></a></nav></main><footer class="footer" data-astro-cid-jo6i4kqk><div class="inner" data-astro-cid-jo6i4kqk><div class="who" data-astro-cid-jo6i4kqk><p class="name" data-astro-cid-jo6i4kqk>Антон Рожин</p><p class="city" data-astro-cid-jo6i4kqk>Санкт-Петербург</p></div><ul class="contacts" data-astro-cid-jo6i4kqk><li data-astro-cid-jo6i4kqk><a href="mailto:rozhin96@mail.ru" data-goal="email_click" data-astro-cid-jo6i4kqk>rozhin96@mail.ru</a></li><li data-astro-cid-jo6i4kqk><a href="tel:+79531567167" data-astro-cid-jo6i4kqk>+7 (953) 156-71-67</a></li><li data-astro-cid-jo6i4kqk><a href="https://t.me/AntonyRozhin" target="_blank" rel="noopener noreferrer" data-goal="telegram_click" data-astro-cid-jo6i4kqk>@AntonyRozhin</a></li><li data-astro-cid-jo6i4kqk><a href="https://www.linkedin.com/in/AntonyRozhin" target="_blank" rel="noopener noreferrer" data-goal="linkedin_click" data-astro-cid-jo6i4kqk>LinkedIn</a></li></ul><p class="copy" data-astro-cid-jo6i4kqk>© 2026 Антон Рожин</p></div></footer></body></html>
